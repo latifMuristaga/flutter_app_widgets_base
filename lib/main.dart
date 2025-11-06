@@ -21,15 +21,35 @@ class MainApp extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   color:   Colors.amberAccent,
-                  borderRadius: BorderRadius.circular(25)
+                  borderRadius: BorderRadius.circular(25),
                 ),
                 child: Text("Boite Stylisée",
-                style: TextStyle(color: Colors.cyanAccent ,fontSize: 18 ),)
-              )  
-            ],
-          )
+                style: TextStyle(color: Colors.cyanAccent ,fontSize: 18 ),
+              ), 
+              ), 
+            Text(
+              "AJOUTE DEUXIEME TEXT ",
+            style: TextStyle(fontSize: 20, color: Colors.deepPurple),
+            ),
+            Stack(
+              alignment: Alignment.topRight,
+              children: [
+                Container(width: 200,height: 200,color: Colors.blue[100]),
+                Icon(Icons.star,size: 100,color: Colors.amber),
+                Text(
+                 "Superposé!",
+                 style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold), 
+                )
+              ],
+            )
+            ],   
+          ),     
         ),
-      ),
+      ),     
     );
-  }
+      
+   }
 }
+
+  
+
