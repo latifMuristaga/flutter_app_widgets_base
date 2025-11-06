@@ -9,13 +9,23 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
           child: Column(
             children: [
              Text('Hello World!'),
-              Text("Atelier 2")  
+              Text("Atelier 2"),
+              Container(
+                margin: EdgeInsets.all(20),
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color:   Colors.amberAccent,
+                  borderRadius: BorderRadius.circular(25)
+                ),
+                child: Text("Boite Stylisée",
+                style: TextStyle(color: Colors.cyanAccent ,fontSize: 18 ),)
+              )  
             ],
           )
         ),
