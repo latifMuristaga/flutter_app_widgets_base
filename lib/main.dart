@@ -39,7 +39,18 @@ class MainApp extends StatelessWidget {
                 Text(
                  "Superposé!",
                  style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold), 
-                )
+                ),
+                Row(
+  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  crossAxisAlignment: CrossAxisAlignment.center,
+  children: [
+    Icon(Icons.home, color: Colors.blue, size: 40),
+    Icon(Icons.star, color: Colors.amber, size: 40),
+    Icon(Icons.thumb_up, color: Colors.green, size: 40),
+    Icon(Icons.favorite, color: Colors.red, size: 40), 
+  ],
+),
+
               ],
             )
             ],   
