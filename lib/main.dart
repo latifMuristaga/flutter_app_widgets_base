@@ -51,7 +51,16 @@ class MainApp extends StatelessWidget {
   ],
 ),
 
-              ],
+              Column(
+  mainAxisAlignment: MainAxisAlignment.center,
+  crossAxisAlignment: CrossAxisAlignment.center,
+  children: [
+    Text("Abdelatif", style: TextStyle(fontSize: 28)),
+    Text("Nemous", style: TextStyle(fontSize: 20)),
+    Icon(Icons.thumb_up, color: Colors.green, size: 40),
+  ],
+)
+],
             )
             ],   
           ),     
